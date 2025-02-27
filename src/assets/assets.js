@@ -16,6 +16,7 @@ import project_img_6 from "./project_img_6.jpg";
 import profile_img_1 from "./profile_img_1.png";
 import profile_img_2 from "./profile_img_2.png";
 import profile_img_3 from "./profile_img_3.png";
+import professional_img from "./Professional_Photo.jpg";
 
 export const assets = {
   logo,
@@ -28,6 +29,7 @@ export const assets = {
   project_img_2,
   project_img_3,
   project_img_4,
+  professional_img,
   left_arrow,
   right_arrow,
 };

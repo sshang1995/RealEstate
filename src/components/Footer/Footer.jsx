@@ -10,7 +10,8 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start">
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
           <img src={assets.logo_dark} alt="" />
-          <p className="text-gray-400 mt-4">A real estate company</p>
+          <p className="text-gray-400 mt-4">Lily Shang</p>
+          <p className="text-gray-400">412-616-6276</p>
         </div>
         <div className="w-full md:w-1/5 mb-8 md:mb-0">
           <h3 className="text-white text-lg font-bold mb-4">Company</h3>
@@ -19,10 +20,10 @@ const Footer = () => {
               Home
             </a>
             <a href="#About" className="hover:text-white">
-              About Us
+              About Me
             </a>
             <a href="#Contact" className="hover:text-white">
-              Contact Us
+              Contact Me
             </a>
             <a href="#" className="hover:text-white">
               Privacy Policy

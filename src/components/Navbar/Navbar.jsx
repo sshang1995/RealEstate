@@ -35,9 +35,9 @@ const Navbar = () => {
             Testimonials
           </a>
         </ul>
-        <button className="hidden md:block bg-white px-8 py-2 rounded-full">
+        {/* <button className="hidden md:block bg-white px-8 py-2 rounded-full">
           Sign up
-        </button>
+        </button> */}
         <img
           src={assets.menu_icon}
           className="md:hidden w-7 cursor-pointer"

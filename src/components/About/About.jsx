@@ -13,8 +13,11 @@ export const About = () => {
     >
       <h1 className="text-2xl sm:text-4xl font-bold mb-2">
         About{" "}
-        <span className="underline underline-offset-4 decoration-1 under font-light">
+        {/* <span className="underline underline-offset-4 decoration-1 under font-light">
           Our Brand
+        </span> */}
+        <span className="underline underline-offset-4 decoration-1 under font-light">
+          Me
         </span>
       </h1>
       <p className="text-gray-500 max-w-80 text-center mb-8">
@@ -22,12 +25,12 @@ export const About = () => {
       </p>
       <div className="flex flex-col md:flex-row items-center md:items-start md:gap-20">
         <img
-          src={assets.brand_img}
+          src={assets.professional_img}
           alt=""
-          className="w-full sm:w-1/2 max-w-lg"
+          className="max-h-96 w-full sm:w-1/2 max-w-lg"
         />
-        <div className="flex flex-col item-center md:items-start mt-10 text-gray-600">
-          <div className="grid grid-cols-2 gap-6 ms:gap-10 w-full 2xl:pr-28">
+        <div className="flex flex-col item-center md:items-start text-gray-600">
+          {/* <div className="grid grid-cols-2 gap-6 ms:gap-10 w-full 2xl:pr-28">
             <div>
               <p className="text-4xl font-medium text-gray-800">10+ </p>
               <p>Years of Excellence</p>
@@ -44,15 +47,28 @@ export const About = () => {
               <p className="text-4xl font-medium text-gray-800">25+ </p>
               <p>Ongoing Projects</p>
             </div>
-          </div>
-          <p className="my-10 max-w-lg">
-            Expertise in residental property, investment property, rental
-            property. Focus on Boston suburd and city area. Helped many clients
-            find their new home.
+          </div> */}
+          <p className="max-w-lg text-xl">
+            {/* className="my-10 max-w-lg" */}
+            Hi, I’m Lily Shang, your trusted real estate expert! Whether you're
+            buying, selling, or investing, I’m here to make the process smooth,
+            stress-free, and successful.
           </p>
-          <button className="bg-blue-600 text-white px-8 py-2 rounded">
+          <br />
+          <p className="max-w-lg text-xl">
+            I believe that every transaction is more than just a deal—it’s about
+            finding the perfect home, securing the right investment, or making
+            the next big move in your life.
+          </p>
+          <br />
+          <p className="max-w-lg text-xl">
+            I have local expertise, and strong negotiation skills to ensure you
+            get the best results. Let’s connect and make your real estate dreams
+            a reality!
+          </p>
+          {/* <button className="bg-blue-600 text-white px-8 py-2 rounded">
             Learn More
-          </button>
+          </button> */}
         </div>
       </div>
     </motion.div>

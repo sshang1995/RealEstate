@@ -7,6 +7,8 @@ import Contact from "./components/Contact/Contact";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/Footer/Footer";
+import ScheduleAppointment from "./components/ScheduleAppointment/ScheduleAppointment";
+import AI from "./components/AI/AI";
 
 const App = () => {
   return (
@@ -14,9 +16,11 @@ const App = () => {
       <ToastContainer />
       <Header />
       <About />
-      <Projects />
-      <Testimonails />
+      {/* <Projects />
+      <Testimonails /> */}
       <Contact />
+      <AI />
+      <ScheduleAppointment />
       <Footer />
     </div>
   );
