@@ -6,7 +6,7 @@ position: fixed;
 @media (max-width:1024px){
     .ai-chat{
         position: fixed;
-         bottom: 10%;
+         bottom: 11%;
          right: 5%
         }
 }
@@ -14,7 +14,7 @@ position: fixed;
 @media (max-width:500px){
     .ai-chat{
         position: fixed;
-         bottom: 10%;
+         bottom: 11%;
          right: 10%
         }
 }
