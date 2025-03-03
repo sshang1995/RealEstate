@@ -1,12 +1,12 @@
 .ai-chat{
 position: fixed;
- bottom: 12%;
+ bottom: 15%;
  right: 5%
 }
 @media (max-width:1024px){
     .ai-chat{
         position: fixed;
-         bottom: 11%;
+         bottom: 14%;
          right: 5%
         }
 }
@@ -14,7 +14,7 @@ position: fixed;
 @media (max-width:500px){
     .ai-chat{
         position: fixed;
-         bottom: 11%;
+         bottom: 13%;
          right: 10%
         }
 }

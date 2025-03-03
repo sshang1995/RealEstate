@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { assets } from "../../assets/assets";
+import axios from "axios";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const subscribe = async () => {
+    console.log(email);
+    if (!email) {
+      return;
+    }
+    const response = await axios.post(
+      `https://realestatesubscribe.azurewebsites.net/api/subsribe?email=${email}`
+    );
+
+    console.log(response);
+  };
+
   return (
     <div
       className="pt-10 px-4 md:px-20 lg:px-32 bg-gray-900 w-full overflow-hidden"
@@ -42,15 +57,19 @@ const Footer = () => {
               type="email"
               placeholder="Enter your email"
               className="p-2 rounded bg-gray-800 text-gray-400 border border-gray-700 focus:outline-none w-full md:w-auto"
+              onChange={(e) => setEmail(e.target.value)}
             />
-            <button className="py-2 px-4 rounded bg-blue-500 text-white">
+            <button
+              className="py-2 px-4 rounded bg-blue-500 text-white"
+              onClick={subscribe}
+            >
               Subscribe
             </button>
           </div>
         </div>
       </div>
       <div className="border-t border-gray-700 py-4 mt-10 text-center text-gray-500">
-        Copyright 2024 © Estate All Right Reserved.
+        Copyright {new Date().getFullYear()} © Estate All Right Reserved.
       </div>
     </div>
   );
