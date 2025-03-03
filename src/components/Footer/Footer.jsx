@@ -4,12 +4,13 @@ import axios from "axios";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
+  const [hasSubscribed, setHasSubscribed] = useState(false);
 
   const subscribe = async () => {
-    console.log(email);
     if (!email) {
       return;
     }
+    setHasSubscribed(true);
     const response = await axios.post(
       `https://realestatesubscribe.azurewebsites.net/api/subsribe?email=${email}`
     );
@@ -63,7 +64,7 @@ const Footer = () => {
               className="py-2 px-4 rounded bg-blue-500 text-white"
               onClick={subscribe}
             >
-              Subscribe
+              {hasSubscribed ? "Subscribed Success" : "Subscribe"}
             </button>
           </div>
         </div>
