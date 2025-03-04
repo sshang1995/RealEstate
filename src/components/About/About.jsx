@@ -1,6 +1,8 @@
 import React from "react";
 import { assets } from "../../assets/assets";
 import { motion } from "motion/react";
+import "./About.css";
+
 export const About = () => {
   return (
     <motion.div
@@ -24,11 +26,9 @@ export const About = () => {
         Passionate About Properties, Dedicated to Your Vision
       </p>
       <div className="flex flex-col md:flex-row items-center md:items-start md:gap-20">
-        <img
-          src={assets.professional_img}
-          alt=""
-          className="max-h-96 w-full sm:w-1/2 max-w-lg"
-        />
+        <div className="img w-full sm:w-1/2 max-w-lg">
+          <img src={assets.professional_img} alt="" />
+        </div>
         <div className="flex flex-col item-center md:items-start text-gray-600">
           {/* <div className="grid grid-cols-2 gap-6 ms:gap-10 w-full 2xl:pr-28">
             <div>
@@ -48,6 +48,7 @@ export const About = () => {
               <p>Ongoing Projects</p>
             </div>
           </div> */}
+          <br />
           <p className="max-w-lg text-xl">
             {/* className="my-10 max-w-lg" */}
             Hi, I’m Lily Shang, your trusted real estate expert! Whether you're
